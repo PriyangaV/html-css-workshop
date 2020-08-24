@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- form - used to pass user-data and it can contain textfields, checkboxes, radio-buttons, select option and more -->
+    <form action="">
+      <!-- inputs - a control that allows the user to input data and it can be displayed in several ways, depending on the type attribute -->
+      <h2>Input Types</h2>
+      <!-- label -->
+      <label for="name">name</label>
+      <!-- text input -->
+      <input type="text" name="name" placeholder="type something here..." />
+      <br />
+      <br />
+      <!-- email input -->
+      <label for="email">email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="email@email.com"
+      />
+      <br />
+      <br />
+      <!-- password input -->
+      <label for="password">password</label>
+      <input type="password" name="password" id="password" value="some" />
+      <br />
+      <br />
+      <!-- search input -->
+      <label for="search">search</label>
+      <input type="search" name="search" id="search" />
+      <br />
+      <br />
+      <!-- submit input -->
+      <input type="submit" value="input submit" />
+      <br />
+      <br />
+      <!-- date input -->
+      <input type="date" id="date" name="date" />
+      <br /><br />
+      <!-- end of input types -->
+
+      <hr />
+
+      <!-- buttons - a clickable button, used to submit forms or anywhere in a document -->
+      <h2>Button Types</h2>
+
+      <!-- normal clickable button -->
+      <button type="button">clickable</button>
+
+      <!-- submit - helps to submit the form data to the form-handler -->
+      <button type="submit">submit</button>
+
+      <!-- disabled - it is unusable and un-clickable -->
+      <button disabled="disabled">disabled</button>
+
+      <!-- reset - resets all form values to its initial values -->
+      <button type="reset">reset</button>
+      <br /><br />
+      <!-- end of button types -->
+
+      <hr />
+
+      <!-- textarea - represents a multi-line plain-text editing control, for example a comment on a review or feedback -->
+      <h2>Textarea</h2>
+      <textarea name="description" id="desc" cols="30" rows="10"></textarea>
+      <br /><br />
+      <!-- end of textarea -->
+
+      <hr />
+
+      <!-- radio - used to let a user select only one option of a limited number of choices -->
+      <h2>Radio</h2>
+      <input type="radio" name="radio" />
+      <label for="radio">Radio</label>
+
+      <!-- checked radio -->
+      <input type="radio" name="radio" checked />
+      <label for="radio">Radio Checked</label>
+
+      <!-- disabled radio -->
+      <input type="radio" name="radio" disabled />
+      <label for="radio">Radio Checked</label>
+      <br /><br />
+      <!-- end of radio -->
+
+      <hr />
+
+      <!-- checkbox - used to let a user select one or more options of a limited number of choices -->
+      <h2>Checkbox</h2>
+      <input type="checkbox" name="checkbox" />
+      <label for="checkbox">Checkbox</label>
+
+      <!-- checked checkbox -->
+      <input type="checkbox" name="checkbox" checked />
+      <label for="checkbox">Checkbox Checked</label>
+
+      <!-- disabled checkbox -->
+      <input type="checkbox" name="checkbox" disabled />
+      <label for="checkbox">Checkbox Disabled</label>
+      <br /><br />
+      <!-- end of checkbox -->
+
+      <hr />
+
+      <!-- select - used to create a drop-down list -->
+      <h2>Select</h2>
+      <select name="select" id="select">
+        <!-- option - defines an option in a select list -->
+        <option value="one">one</option>
+        <option value="two">two</option>
+        <option value="three">three</option>
+        <option value="four">four</option>
+      </select>
+
+      <br /><br />
+      <!-- end of select -->
+
+      <hr />
+
+      <!-- fieldset - used to group related elements in a form and draws a box around the related elements -->
+      <h2>Fieldset</h2>
+      <fieldset>
+        <!-- legend - used to define a caption for the fieldset -->
+        <legend>Personal:</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+      <br /><br />
+
+      <h2>Fieldset Disabled</h2>
+      <!-- disabled fieldset -->
+      <fieldset disabled>
+        <!-- legend - used to define a caption for the fieldset -->
+        <legend>Personal:</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+      <!-- end of fieldset -->
+    </form>
+    <!-- end of form -->
+  </body>
+</html>

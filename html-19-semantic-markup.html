@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Semantic Markup</title>
+  </head>
+  <body>
+    <!-- Non semantic markup -->
+    <div>A top level page heading</div>
+    <div>
+      A paragraph which contains a word with
+      <span>strong</span> <span>em</span> significance
+    </div>
+    <div>
+      <a href="#">home</a>
+      <a href="#">about</a>
+    </div>
+    <div class="sidebar">
+      sidebar
+    </div>
+    <div class="section">
+      section
+      <div class="content">
+        content
+      </div>
+    </div>
+
+    <!-- Semantic markup -->
+    <h1>A top level page heading</h1>
+    <p>
+      A paragraph which contains a word with
+      <strong>strong</strong> and <em>em</em>
+      significance
+    </p>
+    <nav>
+      <a href="#">home</a>
+      <a href="#">about</a>
+    </nav>
+    <section>
+      <article>
+        content goes here
+      </article>
+    </section>
+    <aside>side content goes here</aside>
+  </body>
+</html>
