@@ -1,0 +1,37 @@
+/* 
+  @ Gradient
+*/
+
+.gradient div {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.one {
+  background: linear-gradient(pink, seagreen);
+}
+
+.two {
+  background: linear-gradient(to right, orange, yellowgreen, pink);
+}
+.three {
+  background: linear-gradient(to top, purple, orchid, pink);
+}
+.four {
+  background: linear-gradient(to left, aqua, violet, seagreen);
+}
+.five {
+  background: linear-gradient(to bottom, steelblue, brown, yellow);
+}
+.six {
+  background: linear-gradient(
+    to top,
+    rgba(198, 37, 204, 0.6),
+    rgba(45, 221, 148, 0.6),
+    rgba(82, 3, 63, 0.8)
+  );
+}
+.seven {
+  background: linear-gradient(to right, pink 50%, yellowgreen 30%);
+}

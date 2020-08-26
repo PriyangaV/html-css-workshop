@@ -1,0 +1,21 @@
+/* 
+  @ Inheritance
+    > children inherit styles from the parent, unless have their own styles
+    > it applies to the properties that are matching
+*/
+
+body {
+  color: orange;
+  font-family: monospace;
+  font-size: 5rem;
+}
+
+.special {
+  color: violet;
+  font-size: 2rem;
+}
+
+.child {
+  color: blue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

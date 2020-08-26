@@ -1,0 +1,41 @@
+/* 
+  @ Last Rule
+  @ Specificity
+    > If there are two or more conflicting css rules that point to the same element, the browser follows some rules to determine which one is the most specific and therefore wins out.
+  @ Universal Selector 
+    > *
+*/
+
+* {
+  color: goldenrod; /* least amount of specificity */
+}
+
+/* last rule */
+
+.special {
+  color: peru; /* specificity applies here */
+}
+
+p {
+  color: palevioletred;
+}
+/* some more code here */
+p {
+  color: seagreen;
+}
+
+/* specificity */
+
+#heading {
+  color: slateblue; /* this rule will apply, ID has more specificity than the CLASS */
+}
+
+.heading {
+  color: aqua;
+}
+
+/* universal selector */
+
+* {
+  color: red; /* least amount of specificity even it's added to the end - LAST RULE won't apply here */
+}

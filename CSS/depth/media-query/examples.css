@@ -1,0 +1,25 @@
+/* 
+@ Examples
+  $ @media screen and (max-width: 600px) { #id { background: red; } }
+  $ @media screen and (orientation: portrait | landscape) { #id { background: yellow; } }
+  $ <link rel='stylesheet' media='screen and (min-width: 320px) and (max-width: 480px)' href='css/smartphone.css' />
+  > Syntax: @media / media=
+    $ @media print and (orientation: landscape) { }
+    $ <link src="style.css" rel="stylesheet" media="screen and (min-width: 400)"/>
+  > Syntax: only / not
+    $ "only" leaves out older browsers
+      ? media="only print and (color)"
+    $ "not" - if untrue
+      ? media="not screen and (color)"
+  > Syntax: punctuation
+    $ "and" - both parts must be true
+      ? media="only screen and (orientation: portrait)"
+    $ Comma separates selectors - any part can be true
+      ? media="print, screen and (min-width: 480px)"
+  > Syntax: media condition
+    $ In parenthesis
+      ? media="screen and (max-width: 600px)"
+      ? media="print and (orientation: landscape)"
+      ? @media screen and (prefers-reduced-motion: reduce) {}
+      ? @media tty and (grid) {}
+*/

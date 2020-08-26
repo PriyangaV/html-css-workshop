@@ -1,0 +1,42 @@
+/* 
+@ Level 3 selectors
+  $ Pseudo-elements
+    > ::before
+    > ::after
+    > ::first-letter
+    > ::first-line
+  $ Attribute selectors
+    > [attr^=val]
+      - a[href^=http] 
+        ? starts with the value val
+    > [attr$=val]
+      - a[href$=pdf]
+        ? ends in val 
+    > [attr*=val]
+      - a[title*="word"]
+        ? <a title="Sentence with 4 words"> - matches val anywhere within the attribute
+      - a[title][href]
+        ? Multiple attributes work
+      - input[type="number"][min][max]
+        ? Multiple attributes work 
+  $ General sibling combinator
+    > tagName ~ tagName - div ~ p
+      - matches later siblings, but not nested.
+  $ Structural pseudo-classes
+    > :root
+    > :empty
+      ? selector matches every element that has no children (including text nodes)
+    > :last-child
+    > :only-child
+    > :nth-child(n)
+    > :nth-last-child(n)
+    > :first-of-type
+    > :last-of-type
+    > :only-of-type
+    > :nth-of-type(n)
+    > :nth-last-of-type(n)
+  $ Negation pseudo-class
+    > :not(selector)
+  $ Target pseudo-class
+    > :target
+ */

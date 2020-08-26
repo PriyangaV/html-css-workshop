@@ -1,0 +1,48 @@
+/* 
+@ Level 2 selectors
+  $ Universal selector
+    > * - * {}
+  $ Type selector
+    > tagName - div {}
+  $ Descendant selector
+    > tagName tagName - div p {}
+  $ Class selector
+    > .className - .class {}
+  $ ID selector
+    > #id - #id {}
+  $ Child combinator
+    > tagName > tagName - ol > li {}
+      - matches <li>s in <ol>
+  $ Adjacent sibling combinator
+    > tagName + tagName - div + p {}
+      - matches the second element only if it immediately follows the first element, and both are children of the same parent element
+  $ Attribute Selectors
+    - Select elements containing the named attribute
+      > element[attr]
+        - img[alt] - <img src="image.jpg" alt="accessible">
+        - form [type] - <input type="date">
+        - p[lang] - 
+          ? <p lang="en-us"> - any value
+      > [attr='value']
+        - p[id="home"] 
+          ? <p id="home"> - exact value
+      > [attr~='value']
+        - a[title~="word"]
+          ? <a title="Three word sentence"> - includes the full word
+      > [attr|='en']
+        - <p lang="en-us"> 
+          ? p[lang|="en"] - it has a value val or begins with val- ("val" plus "-")
+  $ Structural pseudo-class
+    > :first-child
+    > :first-letter
+    > :first-line
+  $ Lang pseudo-class
+    > :lang()
+  $ User action pseudo-class
+    > :active - a:active{}
+    > :focus
+    > :hover
+    > :visited
+    > :before
+    > :after
+ */

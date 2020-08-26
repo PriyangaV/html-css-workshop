@@ -1,0 +1,44 @@
+/* 
+@ Level 5 selectors
+  $ Negation pseudo-class
+    > :not(selector1, selector2)
+  $ Matches any pseudo-class
+    > :is()
+  $ Specificity Adjustment pseudo-class
+    > :where()
+  $ Relational pseudo-class
+    > :has(selector1, selector2)
+  $ Case-insensitive attribute selector
+    > [attribute = 'value' i]
+      - element[title*="foobar" i]
+      - element[title*="FooBar" i]
+      - input[type="checkbox"]
+      - input[type="ChEcKbOx"]
+        ? Relevant if attribute value is case senstive (Strings, not keywords)
+      - element[id="foobar"]
+      - element[id="FooBar"]
+      - a[target="ABC" s ]
+      - a[target="abc" s ]
+        ? Relevant if attribute value is NOT case sensitive in CSS
+        ? Case sensitivity in CSS is not exactly the same as in HTML
+  $ Case-sensitive attribute selector
+    > [attribute = 'value' s]
+  $ Dir pseudo-class
+    > dir(ltr), dir(rtl)
+  $ Lang pseudo-class
+    > lang(*-en)
+  $ Hyperlink pseudo-class
+    > :any-link
+  $ Local link pseudo-class
+    > :local-link
+  $ Scope pseudo-class
+    > :scope
+  $ Target container pseudo-class
+    > :target-within
+  $ Pseudo selector
+    > :focus-within
+    > :focus-visible
+  $ Child-indexed pseudo-classes
+    > :nth-child( n [of selector] ?)
+    > :nth-last-child( n [[of selector] ?)
+*/

@@ -1,0 +1,40 @@
+/* 
+  @ Knowledge
+    ? White space
+      > In a selector, one or more spaces is a descendant combinator
+      > Comments and white space are encouraged for readability. 
+      > They can be removed via minification during the build process.
+    ? Character declaration
+      > @charet "UTF-8";
+      $ Must be the first thing in the stylesheet
+      $ Must be the first character on the page
+      $ Must have EXACTLY one space
+      $ Must have double quotes
+      $ Only for linked or imported stylesheets
+    ? Comments
+      > Comments are generally optional and encouraged for readability, and can be removed during minification / build
+        $ Single line
+        $ Multi line
+        $ Comments cannot be nested
+    ? Forgiving
+      > Skips declarations it doesn't understand
+        $ p { movi? element: fast and furios; color: groot} - not a valid property and color
+    ? Strict
+      > If there is an invalid pseudo-element or pseudo-class within in a chain or group of selectors, the whole selector list is invalid
+      > Fails entire ruleset if pseudo-class is wrong in a selector
+        $ a:oops - entire declaration tossed
+      > If a pseudo-element (but not pseudo-class) has a -webkit- prefix, webkit and mozilla will not invalidate the selector list
+      > Unless it's a ::-webkit- prefixed pseudoelement
+        $ a::-webkit-does-not-exist { prop: value }
+      > Can be used to comment out lines of CSS
+        $ p { _color: red;} // ignored
+    ? Errors and Error Handling
+      > Syntax error, which will be ignored
+        $ p { color: 16px; }
+      > Invalid:: custom property, which will not be ignored
+        $ :root {--siz? element: 16px;}
+        ! p { color: var(--size); }
+    ? The cascade
+      > The C in CSS stands for 'Cascade'
+      $ p { color: red; color: green; color: orange; } // color will be orange;
+*/

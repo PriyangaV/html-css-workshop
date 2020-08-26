@@ -1,0 +1,20 @@
+/* 
+  @ Attribute Selectors Recap
+    ? input[placeholder] {}
+    ? input[type=email] {}
+    ? abbr[title~=unicorn] {}
+    ? abbr[title|=en] {}
+    ? a[href^=mailto] {}
+    ? a[href$=pdf]{}
+    ? abbr[title*=unicorn] {}
+    ? abbr[title*=UNICORN i] {}
+    ? element:[att] 
+    ? element:[att=val] 
+    ? element:[att~=val] 
+    ? element:[att|=val] 
+    ? element:[att^=val] 
+    ? element:[att$=val]  
+    ? element:[att*=val]  
+    ? element:[att*=VAL i]  
+    ? element:[att*=VAL s] 
+*/

@@ -1,0 +1,32 @@
+/* 
+@ Level 6 selectors 
+  $ Time Dimentional
+    > :current
+    > :current(s)
+    > :past
+    > :future
+  $ Video/Audio Play States
+    > :playing
+    > :paused
+  $ Grid-Structural
+    > tagName || tagName
+    > :nth-col(n)
+    > :nth-last-col(n)
+  $ Sometime
+    > ::selection
+  $ Scoping
+    > ::slotted()
+    > :host
+    > :host-context()
+    > ::shadow
+    > ::content
+  $ Removed and now
+    // :column(selector)
+      > :nth-col()
+    // tagName! > tagName
+      > :has()
+    // :matches()
+      > :is()
+    // :nth-match()
+      > :nth-child(selector)
+ */

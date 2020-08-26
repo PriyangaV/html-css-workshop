@@ -1,0 +1,32 @@
+/* 
+  @ Specificity
+    ? 0-0-0: Global selector
+    ? 0-0-1: Type Selector (Elements & pseudoelements)
+    ? 0-1-0: Class selector (Also attribute selector & pseudoclass)
+    ? 1-0-0: ID selector
+    ? 1-0-0-0: inline styles
+    ? 1-0-0-0-0: !important (on value)
+
+    > How many IDs in the selector?
+    > How many class, attribute and pseudoclasses?
+    > How many type/element or pseudo-elements?
+
+    ? The * selector, or global selector, has a specifity of 0
+    ? Combinators, like ~, >, spaces, and + have no value
+    ? :not has no value, but parameter selector does
+      > .class:not(p) {} 0-1-1
+
+    ? Specificity is not inheritance
+    ? Styles for a directly targeted element take precedence over inherited styles regardless of inherited specificity
+      > <p class="important" id="para">Paragraph with a <a href="x.html">link</a></p>
+      > p#para.important { color: red !important; } 
+      > a { color: purple; }
+
+    ? Avoid !important
+    ? Hacking specificity
+      > TheirWidget {background-color: blue !important;}
+      > #3rdPartyWidget {background-color: white;}
+    
+    ? Hack in case of emergency
+      > a:not(#idDoesNotExist#idDoesNotExist#idDoesNotExist) 
+*/

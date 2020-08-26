@@ -1,0 +1,45 @@
+/* 
+  @ Generated Content
+
+    > Content - Doesn't apply to replaced elements like <img> and <br>
+    > Objects inserted using the content property are anonymous replaced elements
+
+    ? p::before { content: ''; }
+    ? p::after { content: ''; }
+
+    > content: none
+      $ Acts as display: none; on pseudo-elements
+      $ Basically, gets rid of the generated content if there was any added
+
+    > content: normal
+      $ ::before and ::after it's the same as none
+      $ ::marker it's as if no content was defined, as if set to initial
+      $ DOM elements, computes to contents, as if not set at all
+    
+    > Quotes are a two step process: definte the quote property, then use open-quote and close-quote as values for the content property
+      $ content: open-quote;
+      $ content: close-quote;
+      $ content: no-open-quote;
+      $ content: no-close-quote;
+
+    > content: <image>
+    > content: attr()
+    > content: counter()
+    > content: counters()
+    > content: <string>
+      $ element::before { content: ''; content: " (.pdf) "; content: "\2603"; content: " (" attr(href) ")"; }
+      - empty
+      - any text 
+      - unicode
+      - attributes
+    
+    > Special Character
+      $ element::before { content: "\2603"; }
+
+  @ Accessibility of Generated Content
+    ? Generated content can enhance but should not change actual content
+    ? Separation of concerns: content v. presentation
+    ? Generated content is factored into element's accessible name computation
+    ? All browsers except IE exposes generated content
+    ? Some browsers translate generated content, but not all (yet?)
+*/

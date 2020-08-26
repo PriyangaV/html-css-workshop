@@ -1,0 +1,44 @@
+/* 
+@ Pseudo-Classes Recap
+  ? :valid
+  ? :invalid
+  ? :required
+  ? :optional
+  ? :in-range
+  ? :out-of-range
+  ? :read-only
+  ? :read-write
+  ? :enabled
+  ? :disabled
+  ? :checked
+  ? :indeterminate
+  ? :default
+  ? :placeholder-shown
+    > When the placeholder attribute value is visible
+    > #id input[placeholder]:placeholder-shown { border: initial; background-color: pink; }
+  ? :blank 
+  ? :user-invalid
+
+@ UI state of a checkbox Recap
+  ? :checked
+  ? :default
+  ? :indeterminate
+    > When radio and checkbox elements are neither checked nor unchecked
+    > Progress meter when the percent completion is not known
+    > Radio-group initialized with no pre-selected choice
+    $ [type="checkbox"]:indeterminate + label { color: blue; }
+  ? :enabled
+  ? :disabled
+  > #checked input[type=checkbox]:checked + label { color: red; }
+
+@ Form related Pseudo-Classes Recap
+  ? #id input:valid { border-color: green;}
+  ? #id input:invalid { border-color: red;}
+  ? #id input:required,
+  ? #id input[aria-required="true"] {border-width: 5px;}
+  ? #id input:optional {border-width: 10px;}
+  ? #id input:out-of-range { background-color: pink;}
+  ? #id input:in-range { background-color: lightgreen;}
+  > <input type="number" min="5" max="7" required aria-required="true" />
+  > <input type="number" min="0" step="0.1" max="10"/>
+ */

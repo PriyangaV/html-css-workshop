@@ -1,0 +1,99 @@
+/* 
+  @ Positions
+    > static (default)
+       $ always positioned according to the normal flow
+    > relative
+      $ position relative to it's normal position
+      $ top, bottom, left, right
+    > absolute
+      $ relative to te parent with position: relative
+    > fixed
+      $ relative to the viewport ( screen ), stays as we are scrolling
+      $ will use other content to fill out the space
+    > sticky
+      $ toggles between relative and fixed
+      $ once the position is met in the viewport, then it sticks
+      $ top, left, bottom, right
+
+*/
+
+/* static */
+
+.notFixed {
+  border: 5px solid orange;
+  background: yellowgreen;
+  margin-top: 40px;
+}
+
+.one {
+  background: slateblue;
+  color: white;
+}
+
+.two {
+  background: purple;
+  color: white;
+}
+
+.special {
+  background: black;
+  color: white;
+  font-size: 25px;
+}
+
+/* relative */
+
+.one {
+  background: slateblue;
+  color: white;
+  /* position: relative; */
+  /* top: 200px; */
+  /* bottom: 3rem; */
+  /* left: 20%; */
+  /* right: 4%; */
+}
+
+/* absolute */
+
+.notFixed {
+  /* position: relative; */
+}
+
+.special {
+  /* position: absolute; */
+  /* top: 40px; */
+  /* bottom: 50%; */
+  left: 0;
+  top: 0;
+}
+
+/* fixed */
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: blue;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.empty {
+  background: pink;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* sticky */
+
+.sticky {
+  position: sticky;
+  top: 3rem;
+  width: 100%;
+  background: orangered;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}

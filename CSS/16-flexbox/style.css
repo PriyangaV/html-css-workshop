@@ -1,0 +1,88 @@
+/* 
+  @ Flexbox
+    ? flexible box model
+    ? one dimension - row / column
+    ? browser support - 95% (caniuse.com)
+    ? browser prefixess - auto prefixer
+    
+    > display
+      $ flex / inline-flex
+    > flex-direction
+      $ row (default) / column / row-reverse / column-reverse
+    > flex-wrap
+      $ wrap / nowrap (default) / wrap-reverse
+    > justify-content - horizantal alignment
+      $ flex-start (default) / flex-end ( evently distributed )
+      $ space-between - first item start, last end
+      $ space-around - side margins
+      $ space-evenlt - even margins
+    > align-items - vertical alignment
+      $ stretch (default) / flex-start / flex-end / center / baseline
+    > align-content
+      $ stretch (default) / flex-start / flex-end / space-around / space-between / center
+    > Main axis / Cross axis
+
+    > Order -  all children have order: 0 by default
+
+    > align-self
+    
+    > flex-grow - all children have flex-grow: 0 by default
+      $ it specifies how much the item will grow relative to the rest of the flexible items inside the same container
+    > flex-shrink - all children have flex-shrink: 1 by default
+      $ it specifies how the item will shrink relative to the rest of the flexible items inside the same container
+
+    > flex-basis
+      $ base value
+
+    > flex: shorthand
+      $ flex: grow shrink basis
+*/
+
+.container {
+  border: 3px solid;
+  display: flex;
+  /* display: inline-flex; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.box {
+  padding: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  /* flex-grow: 1; */
+  /* flex-basis: 100px; */
+  flex: 1 0 200px;
+}
+
+.box1 {
+  background: tomato;
+}
+.box2 {
+  background: forestgreen;
+  width: 200px;
+  flex-shrink: 0;
+}
+.box3 {
+  background: fuchsia;
+  align-self: flex-end;
+}
+.box4 {
+  background: peru;
+  order: 7;
+}
+.box5 {
+  background: blueviolet;
+  font-size: 7rem;
+}
+.box6 {
+  background: cyan;
+}
+.box7 {
+  background: purple;
+  flex-grow: 1;
+}

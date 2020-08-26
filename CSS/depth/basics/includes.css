@@ -1,0 +1,17 @@
+/* 
+  @ Including CSS
+    ? <link rel="stylesheet" href="pathToCSSFile" />
+    ? media
+      > media="screen"
+      > media="screen and (max-width: 600px)"
+      > media="screen, print"
+      > @media screen and (max-width: 600px)
+    ? @import
+      > @import url(style.css);
+    ? inline styles
+      > <p style="color: red;"></p>
+    ? scripting
+      > document.querySelector("#id").style.color = "red"
+      > document.querySelector("#id").classList.toggle("class")
+        $ @ methods: add, remove, toggle, contains
+ */

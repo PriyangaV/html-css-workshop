@@ -1,0 +1,91 @@
+/* 
+  @ Box-Model - content -> padding -> border -> margin
+    ? width = width of the content
+    ? height = height of the content
+
+    > padding ( it is spacing between border and content )
+      ! Padding creates extra space within an element
+      $ top, right, bottom, left
+      ? Negative values are not valid
+
+    > border 
+      $ width, style, color
+        - border-width
+          $ <length> | thin | medium | thick ( % values are ignored )
+        - border-style
+          $ border-style: none | hidden | dotted | dashed | double | solid | groove | ridge | inset | outset
+
+          ? Required, or no border will show
+          ? Use transparent color instead of hidden for toggling on/off
+          ? style is REQUIRED
+          ? width defaults to medium
+          ? color defaults to currentColor
+
+    > margin ( it is spacing on the outside of the border of an element, sometimes collapsing between adjacent elements )
+      ! Margins create extra space around an element
+      $ top, right, bottom, left
+      ? value can be auto
+      ? Negative values ARE valid ( margin collapsing )
+      ? Setting left and right to 'auto' will center the element
+
+        @ Inline Elements
+          $ Top and bottom margins have no effect on non-replaced inline elements like <span>
+          $ Top/bottom ignored, left/right don't collapse
+
+    > border-radius
+      $ defines the radius of the element's corners
+      $ this property allows us to add rounded corners to elements
+
+    > negative-margin
+
+    > outline
+      $ it is a line that is drawn around elements, OUTSIDE the borders, to make the element stand out
+      $ Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions, the element's total width and height is not affected by the width of the outline
+
+    > box-sizing ( Sets how the total width and height of an element is calculated )
+      $ content-box (default)
+        * If an element's width to 100px, then the element's content box will be 100px wide, and the width of any border or padding will be added to the final rendered width, making the element wider than 100px
+        - .box { width: 350px; border: 10px solid; } is 370px wide
+
+        ? content = declared width - (padding-right + padding-left + border-right + border-left)
+        ? content = declared height - (padding-top + padding-bottom + border-top + border-bottom)
+
+      $ border-box
+        * It accounts for any border and padding in the values we specify for an element's width and height. If we set an element's width to 100px, that 100px will include any border or padding we added, and the content box will shrink to absorb that extra width
+        - .box { width: 350px; border: 10px solid; } renders a box that is 350px wide
+
+        ? physical width  = declared width +  padding-right + padding-left + border-right  + border-left
+        ? physical height = declared height + padding-top + padding-bottom + border-top  + border-bottom
+*/
+
+/* padding */
+
+h1 {
+  background: pink;
+  padding: 1rem;
+  margin: 1rem;
+  border: 12px solid blue;
+  outline: brown solid 10px;
+}
+
+p {
+  background: olivedrab;
+  padding: 2rem;
+  margin: 2rem;
+  border: 12px solid palevioletred;
+  outline: darkcyan solid 10px;
+}
+
+h2 {
+  border: 5px solid black;
+  padding: 3rem;
+  margin: 3rem;
+  border-radius: 20px;
+}
+
+.overlap {
+  margin: -5rem auto;
+  padding: 1rem 0.5rem;
+  border-radius: 50px;
+  border: 10px double orange;
+}

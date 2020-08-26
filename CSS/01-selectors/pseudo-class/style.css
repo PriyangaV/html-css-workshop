@@ -1,0 +1,46 @@
+/* 
+  @ Pseudo Class
+    > :hover - hover
+    > :link - unvisited links with href
+    > :visited - visited links
+    > :active - as the user clicks
+    > a - all links
+
+  @ :Root 
+    > root element of the document, higher specificity html element
+    > general styles
+    > css variables
+*/
+
+div:hover {
+  color: orangered;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.header:hover {
+  color: wheat;
+  background: purple;
+  padding: 1rem;
+}
+
+a:hover {
+  text-decoration: none;
+  font-size: 2rem;
+  background: seagreen;
+  text-transform: uppercase;
+  color: wheat;
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+a:active {
+  text-decoration: line-through;
+  color: palevioletred;
+}
+
+/* root */
+
+:root {
+  font-size: 2rem;
+}

@@ -1,0 +1,28 @@
+/* 
+@ 10 Media Queries
+    ? all
+    ? aural
+    ? handheld
+    ? braille
+    ? embossed
+    ? print
+    ? projection
+    ? screen
+    ? tty
+    ? tv
+
+    > <link media="screen">
+    > <style media="screen"> 
+    > @import url(myCSS.css) screen;
+    > @media screen {}
+    > <?xml-stylesheet media="screen">
+
+  @ Varied Screen Sizes
+    ? Wrist Watch
+    ? Smart Phone
+    ? Tablet
+    ? Laptop
+    ? Monitor
+    ? TV
+    ? portrait? landscape? resolution?
+*/

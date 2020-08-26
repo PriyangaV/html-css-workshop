@@ -1,0 +1,14 @@
+/* 
+ @ Level 1 selectors
+  $ Type selector
+    > tagName - p {}
+  $ Class selector
+    > .className - .class {}
+  $ ID selector
+    > #id - #id {}
+  $ Descendant selector
+    > tagName tagName - ul li {}
+      - matches nested <li>s
+  $ Link Pseudo-class
+    > :link - a:link {}
+ */

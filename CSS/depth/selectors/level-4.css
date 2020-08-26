@@ -1,0 +1,31 @@
+/* 
+@ Level 4 selectors
+  $ Enabled and Disabled pseudo-class
+    > :enabled
+    > :disabled
+  $ Mutability* pseudo-class
+    > :read-only
+    > :read-write
+  $ Placeholder pseudo-class
+    > :placeholder-shown
+  $ Default option pseudo-class
+    > :default
+  $ Selected-option
+    > :checked
+  $ Indeterminate-value
+    > :indeterminate
+  $ Range pseudo-classes
+    > :valid
+    > :invalid
+    > :in-range
+    > :out-of-range
+  $ Optionality pseudo-class
+    > :required
+    > :optional
+  $ Blank pseudo-class
+    > :blank
+      ? No browser support, but :empty matches
+  $ User interaction pseudo-classes
+    > :user-invalid
+      ? Only Firefox support
+*/

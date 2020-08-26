@@ -1,0 +1,62 @@
+/* 
+ @ Media Features
+  ? Viewport / Page Dimensions
+    > width
+      $ Width of the viewport
+    > height
+      $ Height of the viewport
+    > aspect-ratio
+      $ Width-to-height aspect ratio of the viewport
+    > orientation
+      $ Orientation of the viewport
+  ? Display quality
+    > resolution
+      $Pixel density of the output device
+  ? range v. discrete
+    > Parentheses around expressions are required
+    > Case-insensitive      
+      $ min-
+      $ max-
+      $ >=
+      $ > 
+      $ <
+      $ <=
+      $ =
+  ? Resolution Units
+    > dpi: dots per inch (72, 96)
+    > dpcm: dots per centimeter (1dpcm ≈ 2.54dpi)
+    > dppx: dots per pixel
+    > 1dppx = 96dpi (default resolution of images)
+    $ Note: 0 is invalid
+  
+  ? Display, Color & Interaction features
+    > pointer
+      $ Is the primary input mechanism a pointing device, and if so, how accurate is it? 
+        - none | coarse | fine
+    > hover
+      $ Does the primary input mechanism allow the user to hover over elements? 
+        - none | hover
+    > any-pointer
+      $ Is any available input mechanism a pointing device, and if so, how accurate is it? 
+        - none | coarse | fine
+    > any-hover
+      $ Does any available input mechanism allow the user to hover over elements? 
+        - none | hover
+    > grid
+      $ Does the device use a grid (i.e. TTY) or bitmap screen? 
+        - 0 | 1 or (grid)
+    > color
+      $ # of bits per color component. Zero if device isn't color. @media (min-color: 1) means it's a color device
+
+  ? Additional media features
+    > color-gamut
+      $ Approx. range of supported colors. srgb | p3 | rec2020 (Ch,Op,Sf)
+    > display-mode
+        $ The display mode of the application, as specified in the web app manifest's display member (Defined in the Manifest Spec) full-screen | standalone | minimal-ui | browser (Ch,Op,FF)
+    > monochrome
+        $ Bits per pixel in the output device's monochrome frame buffer, or 0 if the device isn't monochrome (FF,Ch,Op,Sf)
+    > overflow-block
+        $ How is content that overflows the block axis handled? none | scroll | optional-paged | paged (FF)
+    > overflow-inline
+        $ Can content that overflows the viewport along the inline axis be scrolled? (FF)
+ */

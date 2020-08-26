@@ -1,0 +1,39 @@
+/* 
+  @ Positions
+    ? Sets how an element is positioned in a document. top, right, bottom, and left properties determine the final location of positioned (non static) elements
+    > static | relative | absolute | fixed | sticky
+    $ static
+      > Default. Positioned according to the normal flow of the document. top, right, bottom, left, and z-index properties have no effect
+    $ relative
+      > Positioned according to the normal flow of the document. Can be offset relative to itself by top, right, bottom, and left. Change in position does not move its siblings. z-index creates a new stacking context
+    $ absolute
+      > The element is removed from the normal document flow. No space is created for the element in the page layout. Positioned relative to its closest positioned ancestor, or the <body> if none, by the top, right, bottom, and left properties. Creates it's own block formatting context. Margins don't collapse. z-index creates a new stacking context
+    $ fixed
+      > Like absolute, element is removed from the normal document flow, positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set. Position is determined by top, right, bottom, and left. When printed, it's placed in the same spot on every page
+    $ sticky
+
+    ? static | relative | absolute
+      - static
+        > Default. Positioned according to the normal flow of the document. top, right, bottom, left, and z-index properties have no effect
+      - relative
+        > Positioned according to the normal flow of the document. Can be offset relative to itself by top, right, bottom, and left Change in position does not move its siblings. z-index creates a new stacking context
+      - absolute
+        > The element is removed from the normal document flow. No space is created for the element in the page layout. Positioned relative to its closest positioned ancestor, or the <body> if none, by the top, right, bottom, and left properties. Creates it's own block formatting context. Margins don't collapse. z-index creates a new stacking context
+
+    @ position property
+      ? We're interested in absolute, static & relative for right now
+      ? If not static, element is considered positioned
+      ? If positioned, it has it's own stacking context
+      ? If absolute, top, right, bottom, and left properties specify offsets from the edges of the element's containing block containing block is the nearest 'positioned' ancestor, or the <body>
+      ? If no height/width declared on absolute, top: 0; bottom: 0; left: 0; right: 0 will make it the size of it's parent else, top overrides bottom and left overrides right
+
+    @ top, bottom, left & right properties
+      ? <length> | <percentage> | auto
+      
+      > position: absolute;
+        $ Vertical and horizontal positions of element relative to positioned containing block ancestor
+      > position: relative;
+        $ Vertical and horizontal positions of element compared to where it would have been otherwise positioned
+      > position: static;
+        $ Has no impact
+*/

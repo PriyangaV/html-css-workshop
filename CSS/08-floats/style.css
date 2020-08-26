@@ -1,0 +1,49 @@
+/*
+  @ Float
+*/
+
+.banner {
+  border: 5px solid orange;
+}
+
+.one {
+  float: left;
+}
+
+.two {
+  float: right;
+  height: 100px;
+}
+
+p {
+  clear: both;
+}
+
+/*  column layout */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.layout {
+  height: 200px;
+  /* width: 50%; */
+  float: left;
+}
+.layout0 {
+  background: pink;
+}
+.layout1 {
+  background: seagreen;
+}
+.layout2 {
+  background: orangered;
+}
+.layout3 {
+  background: purple;
+}
+
+h1 {
+  clear: both;
+}

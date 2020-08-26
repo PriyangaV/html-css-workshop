@@ -1,0 +1,12 @@
+/* 
+  @ css rule 
+    > selector - h1
+    > declaration block - {}
+    > declaration 
+      $ property - color
+      $ value - pink
+*/
+
+h1 {
+  color: pink;
+}

@@ -1,0 +1,49 @@
+/* 
+@ Pseudo-Elements Recap
+  ? The double colon notation was introduced to establish a discrimination between pseudo-classes and pseudo-elements
+    > ::after (:after)
+    > ::before (:before)
+      $ <p>the content</p>
+      $ .p::before { content: "before content - "; font-weight: bold; }
+      $ .p::after{ content: " - after content"; font-weight: bold; }
+    > ::first-letter (:first-letter)
+    > ::first-line (:first-line)
+  ? For compatibility, browsers accept the one-colon notation for pseudo-elements introduced in CSS levels 1 and 2, but not for newer pseudo-elements
+    > ::selection
+      $ .thisElement *::selection { background-color: #000; color: #ffffff; } 
+      $ Matches the part of a document highlighted by user
+      $ limited stylability: color, background-color, cursor, caret-color, outline, text-decoration, text-emphasis-color, and   text-shadow can be styled. background-image can not
+    > disabling ::selection
+      $ Both mobile and desktop
+      $ .noSelection { -webkit-user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: #f00; }
+    > ::inactive-selection
+      $ Similar to ::selection, but ::selection applies to active selections. ::inactive-selection applies to inactive selections
+    > ::spelling-error 
+      $ The portions of text that have been flagged by the user agent as misspelled
+    > ::grammar-error
+      $ The portions of text that have been flagged by the user agent as grammatically incorrect
+    > ::marker 
+      $ The bullet, or marker, of a list item
+      $ .marker ul li::marker { color: blue; font-size: 2.5em; }
+      $ Currently, only limited CSS properties apply: 
+        - color and content
+        - all font properties
+        - some writing mode properties: text-combine-upright, unicode-bidi, and direction properties
+    > ::placeholder
+      $ The placeholder text in an input field
+      $ .element ::placeholder { color: red; }
+    > ::backdrop
+      $ Backdrop is displayed when dialog is opened with dialog.showModal()
+      $ dialog::backdrop { background: #f0f; } 
+      $ video::backdrop { background: #f0f; } 
+        - https://fullscreen.spec.whatwg.org/#::backdrop-pseudo-element
+    > ::cue  
+    > ::part()
+    > ::slotted()
+
+@ Counters with Selectors
+  ? input[type="number"] {width: 3em;}
+  ? body {counter-reset: invalidCount;}
+  ? :invalid { background-color: pink; counter-increment: invalidCount; }
+  ? p::before { content: "You have " counter(invalidCount) " invalid entries"; }
+ */

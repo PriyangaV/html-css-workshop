@@ -1,0 +1,96 @@
+/* 
+  @ Display: ( Elements have it set by default )
+    > block - always starts a new line and spans full width
+      $ browser respects width/height, top/bottom and margin
+    > inline - doesn't start a new line and spans only content
+      $ browser does not respect width/height, top/bottom and margin
+    > inline-block - doesn't start a new line
+      $ browser respects margin, width, height
+    > table
+    > flex | inline-flex
+    > grid | inline-grid
+    > none
+      $ remove from the flow, hide the element and collapse the space
+
+    @ opacity | visibility
+      $ opacity: 0  | visibility: hidden ( hides the element but preserves the space )
+
+*/
+
+/* horizantal center */
+body {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+div {
+  background: palevioletred;
+}
+
+span,
+a {
+  background: greenyellow;
+}
+
+/* display: inline-block */
+
+a {
+  font-size: 1.5rem;
+  background: burlywood;
+  width: 300px;
+  height: 40px;
+  margin: 40px 10px;
+  display: inline-block;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+/* display: none | opaciy: 0 | visibility: hidden */
+
+div {
+  background: orchid;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.none {
+  display: none;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+/* box-sizing: border-box */
+/* use developer tools to see the differences */
+
+.box-1 {
+  width: 100px;
+  height: 100px;
+  background: chocolate;
+  padding: 20px;
+  margin: 1rem;
+}
+
+.box-2 {
+  width: 100px;
+  height: 100px;
+  background: palegreen;
+  margin: 1rem;
+  padding: 20px;
+}

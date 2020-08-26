@@ -1,0 +1,119 @@
+/* 
+  @ Grids
+    ? Two dimensional layouts
+    ? browser support - 95% (caniuse.com)
+    ? browser prefixes same as flexbox
+
+    > display
+      $ grid / inline-grid
+    
+    > grid-template-colums / grid-template-rows / grid-template-areas
+
+    > implicit grid
+
+    > units - rows as well
+    > px, em, rem, %, auto, fr (fraction of available space)
+
+    > gap
+      $ column / row
+    
+    > fr (vs) %
+
+    > grid-lines - column lines / row lines
+      $ use firefox developer tools to see the lines
+    
+    > naming grid lines
+
+    > order, repeat function
+
+    > justify-content, align-content
+    
+    > align-items, justify-items
+      $ content within items
+    > align-self, justify-self
+      $ single item content
+
+    > minmax()
+
+    > auto-fill - keeps creating
+    > auto-fit - only fits
+*/
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  margin: 7rem;
+
+  grid-template-columns: repeat(auto-fit, 100px);
+  /* grid-template-rows: repeat(auto-fill, 1fr); */
+  /* grid-template-columns: repeat(3, 100px); */
+  /* grid-template-rows: 100px 100px 100px 100px; */
+  /* grid-template-rows: repeat(4, 100px); */
+  /* justify-content: flex-end; */
+  /* align-content: space-around; */
+  /* grid-template-areas: "a a b" "a a b" "c c b" "d d b" "e f f" "g h i"; */
+
+  /* grid-template-columns: [start] 100px [col-1-end] 100px [col-2-end] 100px [end];
+  grid-template-rows: [start] 100px [row-1-end] 100px [row-2-end] 100px [row-3-end] 100px [end];
+  grid-gap: 1rem; */
+
+  border: 5px solid black;
+  /* display: inline-grid; */
+  /* grid-template-columns: 200px 300px 200px 100px; */
+  /* grid-template-columns: 300px 8em auto 20% 1fr auto; */
+  /* grid-template-columns: repeat(3, 100px); */
+  /* grid-template-rows: repeat(4, 100px); */
+  /* grid-gap: 2rem 1rem; */
+  /* column-gap: 1rem;
+  row-gap: 3rem; */
+}
+
+.cell {
+  padding: 2rem;
+  background: #ccc;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid orange;
+  color: white;
+}
+
+.cell-1 {
+  background: saddlebrown;
+  /* grid-area: a; */
+  /* grid-column: col-1-end/end;
+  grid-row: start/end; */
+}
+.cell-2 {
+  background: teal;
+  /* grid-area: b; */
+}
+.cell-3 {
+  background: darkblue;
+  /* grid-area: c; */
+}
+.cell-4 {
+  background: firebrick;
+  /* grid-area: d; */
+  order: 1;
+}
+.cell-5 {
+  background: indigo;
+  /* grid-area: e; */
+}
+.cell-6 {
+  background: hotpink;
+  /* grid-area: f; */
+}
+.cell-7 {
+  background: seagreen;
+  /* grid-area: g; */
+}
+.cell-8 {
+  background: mediumturquoise;
+  /* grid-area: h; */
+}
+.cell-9 {
+  background: limegreen;
+  /* grid-area: i; */
+}

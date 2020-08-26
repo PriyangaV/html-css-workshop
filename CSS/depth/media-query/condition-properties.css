@@ -1,0 +1,30 @@
+/* 
+  > Media Query Condition Properties
+    @ Viewport / Page Dimensions
+      $ (min/max)-width: viewport width
+      $ (min/max)-height: viewport height
+      $ (min/max)-aspect-ratio: width/height
+      $ orientation: portrait(h>w) | landscape(w>h)
+      
+    @ Display quality
+      $ (min/max)-resolution: 72dpi | 100dpcm
+
+    @ Interactions
+      $ (any)-pointer: one | coarse | fine
+      $ (any)-hover: none | hover
+
+    @ Colors
+      $ (min/max)-color:
+      $ (min/max)-color-index:
+      $(min/max)-monochrome: 0 | 1+
+      $ color-gamut: srgb | p3 | rec2020
+    
+    @ Others
+      $ scan: progressive | interlace (tv)
+      $ grid: 0 | 1 (grids (like tty) or bitmap)
+      $ See Media Queries Spec
+    
+    @ Notes:
+      $ case insensitive
+      $ unknown media types == false
+ */

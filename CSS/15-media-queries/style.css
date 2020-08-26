@@ -1,0 +1,56 @@
+/* 
+  @ Media Queries
+    > Responsive Design
+    > Style elements on different screen sizes
+    > min-width: starting from
+    > max-width: up to
+    > Mobile first
+*/
+
+body {
+  background: yellowgreen;
+}
+
+.banner {
+  background: purple;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0;
+}
+
+/* @media screen and (min-width: 50rem) { */
+@media screen and (min-width: 768px) {
+  body {
+    background: seagreen;
+  }
+  .banner {
+    background: violet;
+  }
+  h1 {
+    text-decoration: overline;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  body {
+    background: slateblue;
+  }
+  .banner {
+    background: yellowgreen;
+  }
+  h1 {
+    text-transform: capitalize;
+    letter-spacing: 2rem;
+    font-size: 6rem;
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,30 @@
+/* 
+  @ Background Images
+    > background: url('/image.jpg')
+    > background-repeat
+    > background-size
+    > background-position
+    > background-attachment
+    > linear-gradient
+    > image overlay
+    > shorthand (url + position/size position attachment)
+    > colorzilla
+*/
+
+div {
+  height: 400px;
+  color: white;
+}
+
+.big-img {
+  /* background: seagreen; */
+  background: url("../../images/bg.jpg") right/contain no-repeat;
+  text-align: right;
+}
+.small-img {
+  background: url("../../images/css-background.jpg") no-repeat;
+}
+.folder-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url("../../images/folder.jpg") center/cover fixed no-repeat;
+}

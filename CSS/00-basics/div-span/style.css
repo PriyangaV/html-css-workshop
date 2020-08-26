@@ -1,0 +1,19 @@
+/* 
+  @ div and span - used for grouping
+    > div - used to group multiple elements
+    > span - used to group inline content
+*/
+
+.pink {
+  color: palevioletred;
+}
+
+.orange {
+  color: orange;
+}
+
+span {
+  text-transform: uppercase;
+  color: red;
+  background: whitesmoke;
+}

@@ -1,0 +1,160 @@
+/* 
+  @ Units
+    > absolute, relative
+    > pixels
+      $ absolute values, one dot on the screen
+    > em, rem
+    > vh, vw
+    > font-size
+      $ size of the font
+    > height
+      $ height of an element
+    > width
+      $ width of an element
+*/
+
+/* pixels - same units - both small/big screen */
+
+h1 {
+  font-size: 40px;
+  background: slateblue;
+  color: white;
+  width: 200px;
+  height: 200px;
+}
+
+/* 
+  @ percent units 
+    > % - percent
+    > relative unit/value
+    > depends on the parent values
+*/
+
+.parent {
+  width: 200px;
+  height: 200px;
+  background: salmon;
+}
+
+/* without parent values, this won't be visible */
+.child {
+  width: 50%;
+  height: 50%;
+  background: rebeccapurple;
+}
+
+/* 
+  @ EM units
+    > em - relative, depends on parent
+    > 1em - 16px default browser style
+      $ 1em - base value(16px) * number (1) = 16px
+      $ 2em - base value(15px) * number (2) = 30px
+      $ 3em - base value(10px) * number (1) = 20px
+*/
+
+.absolute {
+  font-size: 46px;
+}
+
+.relative {
+  font-size: 2em; /* broswer base value 16px */
+}
+
+/* 
+  @ REM units
+    > rem - relative, depends on root(body/html)
+    > 1em - 16px default browser style
+      $ 1em - base value(16px) * number (1) = 16px
+      $ 2em - base value(15px) * number (2) = 30px
+      $ 3em - base value(10px) * number (1) = 20px
+*/
+
+html {
+  font-size: 20px;
+}
+div {
+  font-size: 50px;
+}
+.absolute {
+  font-size: 32px;
+}
+.relative {
+  font-size: 5rem;
+}
+
+/* 
+  @ VIEWPORT units
+    > vh - height - percent of the screen
+    > vw - width - percent of the screen
+    ? relative units
+      $ but not relative to the parent
+      $ relative to the screen
+*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  background: seagreen;
+  height: 100vh;
+  width: 100vw;
+}
+
+.about {
+  background: pink;
+  height: 40vh;
+  width: 74vw;
+}
+
+/* 
+  @ Default browser styles 
+    $ without the default browser styles, html elements have no place to show them
+    $ base style - user-agent-stylesheet
+    $ it's possible to override the user-agent-stylesheet
+*/
+
+/* 
+  @ Calc function 
+    > calc()
+      $ perform math operators ( + - * / )
+      $ mix and match values
+*/
+
+.navbar {
+  background: blue;
+  /* height: 100px; */
+  height: 10rem;
+  color: white;
+  font-size: 3rem;
+}
+
+.banner-container {
+  background: palegoldenrod;
+  /* screen height - navbar height */
+  height: calc(100vh - 10rem);
+}
+
+/* 
+  @ min-height, max-height 
+    > height: auto; min-height; max-height; overflow
+*/
+
+.example {
+  background: palegreen;
+  width: 20rem;
+  /* default height: auto height depends on the content */
+  /* height: 3rem; */
+  /* overflow */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* overflow: auto; */
+}
+
+.banner-container {
+  /* comment the height from banner-container to see the min-height */
+  min-height: calc(100vh - 10rem);
+  /* max-height: 90vh;
+  overflow: scroll; */
+}

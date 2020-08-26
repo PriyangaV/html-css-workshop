@@ -1,0 +1,22 @@
+/*
+  $ Selectors/Rulesets
+    @ Selectors API
+      ? var chil = $('#boo .foo');
+        > var el = document.querySelector('#bar'); 
+        > var chil = el.querySelectorAll('.foo');
+        $ var chil = document.querySelectorAll('#bar .foo');
+
+    @ Selectors define which elements and pseudo elements rulesets are applied to
+      > selector1 { prop: value; prop: value }
+      > selector2, selector3 { prop: value; prop: value }
+      > selector:pseudo-class::pseudo-element { property: value; }
+      > selector[attr], selector ~ relation { property: --value; -vendor-property: -vendor-value; -vendor-property: experimentalValue; }
+    @ Basic Selectors
+      > selectById - #id {}
+      > selectByClass - .class {}
+      > selectByTagName - p {}
+      > a:link {}, a:active {}
+      > span#id, div.class, a.tag:link {}
+      > div#unique, .reported a.tag:link {}
+}
+*/

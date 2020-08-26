@@ -1,0 +1,13 @@
+/* 
+  @ Pseudo Elements
+*/
+
+p::first-line {
+  font-weight: bold;
+  color: purple;
+}
+
+p::first-letter {
+  font-size: 250%;
+  color: seagreen;
+}

@@ -1,0 +1,80 @@
+/* 
+  @ Basic Selectors
+    > Universal Selectors
+    > Element Selectors
+    > Grouping Selectors
+    > ID Selectors
+    > Class Selectors
+    > Descendant and Child Selectors
+
+*/
+
+/* universal selectors */
+
+* {
+  box-sizing: border-box;
+}
+
+/* element selectors */
+
+h1 {
+  color: orange;
+}
+
+h2 {
+  color: palevioletred;
+}
+
+p {
+  color: purple;
+}
+
+/* grouping selectors */
+
+h1,
+h2 {
+  color: olive;
+}
+
+/* id selectors - must be unique */
+
+#para {
+  color: peru;
+}
+#para-heading {
+  color: saddlebrown;
+}
+
+/* class selectors */
+
+.class-selector {
+  color: seagreen;
+}
+
+/* id, class selectors */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+#title {
+  color: blueviolet;
+}
+
+/* descendant and child selectors */
+
+div h1 {
+  color: olivedrab;
+}
+
+div > h1 {
+  color: orangered;
+}
+
+.header h1 {
+  color: purple;
+}
+
+.header > h1 {
+  color: brown;
+}

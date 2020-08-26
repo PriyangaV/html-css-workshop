@@ -1,0 +1,185 @@
+/* 
+  @ Transform
+    > translate()
+    > rotate()
+    > scale()
+    > skew()
+
+  @ Transition
+    > change over time
+    > property, duration
+    > shorthand
+  
+  @ Transition Timing Function
+    > how the transition takes place
+    > transition all 3s here 5s
+    > ease - default
+    > ease - slow start, fast, slow end
+    > linear - same speed start to end
+    > ease-in - slow start
+    > ease-out - slow end
+    > ease-in-out - slow start, fast, slow end
+
+  @ Animatation
+    > change over time with more control
+    > transition 0 - 100%
+    > from start to end state
+    > ANIMATION 0 1% 2% 3% ...... 100%
+    > multiple states
+
+  @ Animation Fill Mode
+    > what values are applied by the animation outside time it's executing
+*/
+
+div {
+  width: 100px;
+  height: 100px;
+  /* display: inline-block; */
+}
+
+/* translate */
+
+.one {
+  background: pink;
+  transform: translateX(50%);
+}
+
+.two {
+  background: seagreen;
+  transform: translateY(50px);
+}
+
+.three {
+  background: purple;
+  /* transform: translateZ(75px); */
+  transform: translate(200px, 60%);
+}
+
+/* scale */
+.four {
+  background: yellowgreen;
+  /* transform: scaleX(2); */
+  /* transform: scaleY(4); */
+  transform: scale(2);
+}
+
+/* rotate */
+
+.five {
+  background: steelblue;
+  transform: rotate(70deg);
+}
+
+/* skew */
+
+.six {
+  background: orangered;
+  /* transform: skewX(-40deg); */
+  /* transform: skewY(20deg); */
+  transform: skew(40deg, 20deg);
+}
+
+/* transtition */
+
+.seven {
+  background: orchid;
+  /* transition-property: background; */
+  /* transition-property: background, border-radius;
+  transition-duration: 3s, 2s;
+  transition-delay: 2s; */
+  /* transition: all 3s 1s ease-in; */
+}
+
+.seven:hover {
+  background: black;
+  border-radius: 50%;
+  transform: scale(1.2);
+}
+
+/* transition timing function */
+
+.timing {
+  background: rebeccapurple;
+  color: white;
+  font-size: 2rem;
+  margin: 2rem;
+  /* transition: all 2s; */
+}
+
+.timing:hover {
+  transform: translateX(10rem);
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+.ease {
+  transition-timing-function: ease;
+}
+.ease-in {
+  transition-timing-function: ease-in;
+}
+.ease-out {
+  transition-timing-function: ease-out;
+}
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+/* animation */
+
+.transition {
+  width: 300px;
+  background: chartreuse;
+  transition: all 2s linear;
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+.transition:hover {
+  background: crimson;
+  transform: translateX(100px);
+  color: white;
+}
+
+.animation {
+  width: 300px;
+  background: darkcyan;
+  font-size: 2rem;
+  color: white;
+  /* animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: 4; */
+  /* animation: move 5s 2; */
+}
+.animation:hover {
+  animation: move 5s 2;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(20px);
+    opacity: 0.1;
+  }
+  25% {
+    transform: translateX(-100px);
+    background: darkgoldenrod;
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateX(200px);
+    background: darkmagenta;
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(-50px);
+    background: darkturquoise;
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(300px);
+    background: fuchsia;
+    opacity: 1;
+  }
+}

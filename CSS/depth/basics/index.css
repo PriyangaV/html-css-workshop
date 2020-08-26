@@ -1,0 +1,15 @@
+/*
+  $ CSS Basics
+    @ Declaration
+      ? property: value
+      $ color: red
+    @ Declaration Block
+      ? { property: value; property: value } 
+      $ { color: red; font-weight: bold; }
+    @ Rulesets
+      > Selectors define to which elements and pseudo elements the ruleset is applied
+        ? selector1 { prop: value; prop: value }
+        ? selector2, selector3 { prop: value; prop: value }
+        $ p { color: red; font-weight: bold; }
+        $ p, a { color: red; font-weight: bold; }
+*/
