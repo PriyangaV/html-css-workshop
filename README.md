@@ -4,15 +4,8 @@ Nearly every project built for the web relies on HTML, as its foundation. It def
 
 ## Table of Contents
 
-- [HTML](https://github.com/PriyangaV/html-css-workshop)
-
-  - Editor
-  - Contents
-
-    - Non-Semantic Elements
-      - Tells nothing about its content
-    - Semantic Elements
-      - Clearly defines its content
+- [HTML](https://github.com/PriyangaV/html-css-workshop/tree/master/HTML)
+- [CSS](https://github.com/PriyangaV/html-css-workshop/tree/master/CSS)
 
 ### Editor
 
@@ -20,11 +13,19 @@ Nearly every project built for the web relies on HTML, as its foundation. It def
 
 - There's a bunch of others [listed here](http://en.wikipedia.org/wiki/List_of_HTML_editors), I just listed the ones I've used and liked!
 
-### Contents
+### HTML Contents
 
-- Get to grips with the basic features of HTML5
+- Get to grips with the basic features of HTML5 and CSS3
 
   - HTML5 Semantic Elements
+
+    - Non-Semantic Elements
+
+      - Tells nothing about its content
+
+    - Semantic Elements
+
+      - Clearly defines its content
 
     - Main
     - Section
@@ -77,5 +78,49 @@ Nearly every project built for the web relies on HTML, as its foundation. It def
   - Images
 
   - Video
+
+### CSS Contents
+
+- Basic Syntax
+
+- Selectors
+
+- Inheritance
+
+- Specificity
+
+- Colors
+
+- Unit / Values
+
+- Typography
+
+- Box-Model
+
+- Display
+
+- Floats
+
+- Positions
+
+- Z-Index
+
+- Backgrounds
+
+- Gradients
+
+- Before and After
+
+- Transforms
+
+- Transitions
+
+- Animations
+
+- Media Queries
+
+- Flexbox
+
+- Grids
 
 ### Actually, now the end is here, thanks for reading!
