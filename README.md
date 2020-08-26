@@ -37,43 +37,17 @@ Nearly every project built for the web relies on HTML, as its foundation. It def
 
   - Headings
 
-    - h1, h2, h3, h4, h5, h6
-
   - Paragraph
 
-    - p
-
-  - Block Element
-
-    - div
-    - p
+  - Block Elements
 
   - Inline Elements
-
-    - span
-    - a
-    - strong
-    - em
-    - sub
-    - sup
 
   - Special Characters
 
   - Lists
 
-    - ordered
-    - unordered
-    - nested
-
   - Forms
-
-    - inputs
-    - buttons
-    - textarea
-    - radio
-    - checkbox
-    - select
-    - fieldset
 
   - Images
 
@@ -81,7 +55,7 @@ Nearly every project built for the web relies on HTML, as its foundation. It def
 
 ### CSS Contents
 
-- Basic Syntax
+- Basic
 
 - Selectors
 
